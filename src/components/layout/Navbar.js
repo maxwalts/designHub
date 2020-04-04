@@ -1,17 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import LandingPageLinks from './LandingPageLinks'
 
 const Navbar = () => {
     return (
-        <nav>
-        <div class="nav-wrapper blue darken-4">
-          <a href="#" class="brand-logo">DesignHub</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a >Language Settings: English</a></li>
-            <li><a >become a seller</a></li>
-            <li><a >sign in</a></li>
-            <li><a class="waves-effect waves-light btn">join</a></li>
-          </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+
+          <div class="container">
+            <Link to='/' className="navbar-brand">DesignHub</Link>
+            <LandingPageLinks />
+          </div>
+          
       </nav>
     )
 }

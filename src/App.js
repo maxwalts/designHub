@@ -1,17 +1,21 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer';
-import Form from './components/contact/Form';
+import Homepage from './components/homepage/Homepage'
+
+
 
 function App() {
   return (
+    <BrowserRouter>
       <div className="App">
         <Navbar />
-        <p>more coming soon!</p>
-        <Form />
         <p></p>
-        <Footer />
+        <Homepage />
+        <p></p>
       </div>
+    </ BrowserRouter>
   );
 }
 
